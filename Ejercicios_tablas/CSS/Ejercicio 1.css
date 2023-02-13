@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    margin: 20px auto;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+thead{
+    border-bottom: 3px solid black;
+}
+
+td:first-child{
+    text-align: left;
+}
+
+caption{
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+th{
+    background-color: gray;
+    font-weight: 700;
+}
+
+td:nth-child(3){
+    background-color: lightgray;
+}

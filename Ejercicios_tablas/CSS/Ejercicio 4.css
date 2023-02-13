@@ -1,0 +1,158 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    color: gray;
+    margin: 20px auto;
+}
+
+tbody{
+    color: black;
+}
+
+.champions{
+    background-color: #4285F4;
+}
+
+.uel{
+    background-color: #FA7B17;
+}
+
+.ucl{
+    background-color:#34A853;
+}
+
+.descenso{
+    background-color: #EA4335;
+}
+
+td:nth-child(2){
+    width: 5px;
+    text-align: right;
+}
+
+td:nth-child(3){
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 7vw;
+    background-size: contain;
+    background-position:center;
+}
+
+th{
+    padding: 10px;
+}
+
+th:first-child,td:first-child{
+    width: 5px;
+    padding: 0;
+}
+
+tr{
+    border-bottom: 1px solid lightgray !important;
+}
+
+th:nth-child(2),td{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Barcelona{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_48x48.png);
+}
+
+.Madrid{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_48x48.png);
+}
+
+.RS{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/w8tb1aeBfVZIj9tZXf7eZg_48x48.png);
+}
+
+.Atm{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/srAAE0bOnCppUrlbJpFiHQ_48x48.png);
+}
+
+.Rayo{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/i5LifmxEVIl0sbvIysiyhw_48x48.png);
+}
+
+.Villarreal{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/WKH7Ak5cYD6Qm1EEqXzmVw_48x48.png);
+}
+
+.Betis{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/S0fDZjYYytbZaUt0f3cIhg_48x48.png);
+}
+
+.Athletic{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/OSL_5Zm6kYPP1J17Bo5uDA_48x48.png);
+}
+
+.Osasuna{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/pk-hNCNpGM_JDoHHvLVF-Q_48x48.png);
+}
+
+.Mallorca{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/Ss21P4CUmigjrEtcoapjVg_48x48.png);
+}
+
+.Girona{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/Tyy5rCdiLCw2_8z04DM-GQ_48x48.png);
+}
+
+.Celta{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/wpdhixHP_sloegfP0UlwAw_48x48.png);
+}
+
+.Valladolid{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/yvPDWQC1M4G7SIg9_eidgg_48x48.png);
+}
+
+.Almeria{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/kt3Bf9IFcvWB2N3CN-N7Wg_48x48.png);
+}
+
+.Espanyol{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/TKitIqelDyN6M-kYt4Uc0g_48x48.png);
+}
+
+.Sevilla{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/hCTs5EX3WjCMC5Jl3QE4Rw_48x48.png);
+}
+
+.Valencia{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/QPbjvDwI_0Wuu4tCS2O6uw_48x48.png);
+}
+
+.Cadiz{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/H1vdTrUUqJBeUW1HfbW0nQ_48x48.png);
+}
+
+.Getafe{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/1UDHZMdKZD15W5gus7dJyg_48x48.png);
+}
+
+.Elche{
+    background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/uyyqqxLIYT_lQIXRyMI_RA_48x48.png);
+}
