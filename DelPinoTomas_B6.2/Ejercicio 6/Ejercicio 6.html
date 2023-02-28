@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 6</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        form {
+            border: 1px solid gray;
+            width: 45vw;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        label{
+            margin-bottom: 15px;
+        }
+
+        label:first-child {
+            font-weight: 700;
+        }
+
+        .requerido {
+            color: red;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 80px;
+        }
+
+        .title {
+            height: 100%;
+            width: 200px;
+            text-align: center;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ayuda {
+            max-width: 200px;
+            justify-self: flex-end;
+            margin-left: auto;
+            margin-right: 0;
+            display: none;
+        }
+
+        .label_under {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #codigopostal,
+        #provincia {
+            width: 100px;
+        }
+
+        #municipio,
+        #pais {
+            width: 160px;
+        }
+
+        #apellido1,
+        #apellido2,
+        #direccion {
+            width: 300px;
+        }
+
+        .dos_columnas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 350px;
+        }
+
+        input, select{
+            margin-right: 30px;
+            width: 150px;
+            height: 20px;
+        }
+
+        fieldset:last-child{
+            display: flex;
+            justify-content: right;
+            margin: 0;
+            padding: 0;
+        }
+
+        #alta{
+            margin: 0;
+            position: relative;
+            top: 25px;
+        }
+
+        fieldset:hover{
+            background-color: #FF9;
+        }
+
+        fieldset:hover .ayuda{
+            display: block;
+        }
+
+        input:focus{
+            outline: 2px solid #E6B700;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Formulario de alta</h2>
+        <form method="post" action="#">
+            <fieldset>
+                <div class="container">
+
+                    <div class="title">
+                        <label class="titulo" for="nombre">Nombre y apellidos <span class="requerido">*</span></label>
+                    </div>
+
+                    <div class="inputs">
+                        <input id="nombre" name="nombre" value="" required/>
+                        <label for="nombre">Nombre</label>
+
+                        <input id="apellido1" name="apellido1" value="" required/>
+                        <label for="apellido1">Primer apellido</label>
+
+                        <input id="apellido2" name="apellido2" value="" required/>
+                        <label for="apellido2">Segundo apellido</label>
+                    </div>
+
+                    <p class="ayuda">No te olvides de escribir también tu segundo apellido</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="container">
+                    <div class="title">
+                        <label class="titulo" for="direccion">Dirección <span class="requerido">*</span></label>
+                    </div>
+
+                    <div class="inputs">
+                        <input id="direccion" name="direccion" value="" required/>
+                        <label for="direccion">Calle, número, piso, puerta</label>
+                        <div class="dos_columnas">
+                            <div class="label_under">
+                                <input id="codigopostal" name="codigopostal" value="" required/>
+                                <label for="codigopostal">Código postal</label>
+                            </div>
+
+                            <div class="label_under">
+                                <input id="municipio" name="municipio" value="" required/>
+                                <label for="municipio">Municipio</labe>
+                            </div>
+                            <div class="label_under">
+                                <select id="provincia" name="provincia" required>
+                                    <option value=""></option>
+                                    <option value="provincia1">Provincia 1</option>
+                                    <option value="provincia2">Provincia 2</option>
+                                    <option value="provincia3">Provincia 3</optio>
+                                </select>
+                                <label for="provincia">Provincia</label>
+                            </div>
+                            <div class="label_under">
+                                <select id="pais" name="pais" required>
+                                    <option value=""></option>
+                                    <option value="pais1">País 1</option>
+                                    <option value="pais2">País 2</option>
+                                    <option value="pais3">País 3</option>
+                                </select>
+                                <label for="pais">País</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <div class="title">
+                        <label class="titulo" for="email">Email</label>
+                    </div>
+                    <input id="email" name="email" value="" />
+                    <p class="ayuda">Asegúrate de que sea váfieldsetdo</p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <div class="title">
+                        <label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label>
+                    </div>
+                    <div class="label_under">
+                        <input id="telefonofijo" name="telefonofijo" value="" required/>
+                        <label for="telefonofijo">Fijo</label>
+                    </div>
+
+                    <div class="label_under">
+                        <input id="telefonomovil" name="telefonomovil" value="" required/>
+                        <label for="telefonomovil">Móvil</label>
+                    </div>
+                    <p class="ayuda">Sin prefijo de país y sin espacios en blanco</p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <input id="alta" type="submit" value="Darme de alta &rarr;" />
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

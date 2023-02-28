@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <title>Ejercicio 3 - Formulario de alta</title>
+    <title>Ejercicio 5</title>
     <meta charset="utf-8" />
     <style type="text/css">
         form {
             border: 1px solid gray;
-            width: fit-content;
+            width: 45vw;
         }
 
         fieldset {
@@ -29,6 +29,7 @@
         .container {
             display: flex;
             flex-direction: row;
+            min-height: 80px;
         }
 
         .title {
@@ -77,6 +78,7 @@
         input, select{
             margin-right: 30px;
             width: 150px;
+            height: 20px;
         }
 
         fieldset:last-child{
@@ -106,18 +108,18 @@
                     </div>
 
                     <div class="inputs">
-                        <input id="nombre" name="nombre" value="" />
+                        <input id="nombre" name="nombre" value="" required/>
                         <label for="nombre">Nombre</label>
 
-                        <input id="apellido1" name="apellido1" value="" />
+                        <input id="apellido1" name="apellido1" value="" required/>
                         <label for="apellido1">Primer apellido</label>
 
-                        <input id="apellido2" name="apellido2" value="" />
+                        <input id="apellido2" name="apellido2" value="" required/>
                         <label for="apellido2">Segundo apellido</label>
                     </div>
 
+                    <p class="ayuda">No te olvides de escribir también tu segundo apellido</p>
                 </div>
-                <p class="ayuda">No te olvides de escribir también tu segundo apellido</p>
             </fieldset>
 
             <fieldset>
@@ -127,20 +129,20 @@
                     </div>
 
                     <div class="inputs">
-                        <input id="direccion" name="direccion" value="" />
+                        <input id="direccion" name="direccion" value="" required/>
                         <label for="direccion">Calle, número, piso, puerta</label>
                         <div class="dos_columnas">
                             <div class="label_under">
-                                <input id="codigopostal" name="codigopostal" value="" />
+                                <input id="codigopostal" name="codigopostal" value="" required/>
                                 <label for="codigopostal">Código postal</label>
                             </div>
 
                             <div class="label_under">
-                                <input id="municipio" name="municipio" value="" />
+                                <input id="municipio" name="municipio" value="" required/>
                                 <label for="municipio">Municipio</labe>
                             </div>
                             <div class="label_under">
-                                <select id="provincia" name="provincia">
+                                <select id="provincia" name="provincia" required>
                                     <option value=""></option>
                                     <option value="provincia1">Provincia 1</option>
                                     <option value="provincia2">Provincia 2</option>
@@ -149,7 +151,7 @@
                                 <label for="provincia">Provincia</label>
                             </div>
                             <div class="label_under">
-                                <select id="pais" name="pais">
+                                <select id="pais" name="pais" required>
                                     <option value=""></option>
                                     <option value="pais1">País 1</option>
                                     <option value="pais2">País 2</option>
@@ -159,8 +161,8 @@
                             </div>
                         </div>
                     </div>
+                    <p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p>
                 </div>
-                <p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p>
             </fieldset>
             <fieldset>
                 <div class="container">
@@ -168,8 +170,8 @@
                         <label class="titulo" for="email">Email</label>
                     </div>
                     <input id="email" name="email" value="" />
+                    <p class="ayuda">Asegúrate de que sea váfieldsetdo</p>
                 </div>
-                <p class="ayuda">Asegúrate de que sea váfieldsetdo</p>
             </fieldset>
             <fieldset>
                 <div class="container">
@@ -177,16 +179,16 @@
                         <label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label>
                     </div>
                     <div class="label_under">
-                        <input id="telefonofijo" name="telefonofijo" value="" />
+                        <input id="telefonofijo" name="telefonofijo" value="" required/>
                         <label for="telefonofijo">Fijo</label>
                     </div>
 
                     <div class="label_under">
-                        <input id="telefonomovil" name="telefonomovil" value="" />
+                        <input id="telefonomovil" name="telefonomovil" value="" required/>
                         <label for="telefonomovil">Móvil</label>
                     </div>
+                    <p class="ayuda">Sin prefijo de país y sin espacios en blanco</p>
                 </div>
-                <p class="ayuda">Sin prefijo de país y sin espacios en blanco</p>
             </fieldset>
             <fieldset>
                 <input id="alta" type="submit" value="Darme de alta &rarr;" />
