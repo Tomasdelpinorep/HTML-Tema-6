@@ -1,12 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Ejercicio 8</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body{
+            background-image: url(recursos/hotel.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+        }
+
+        .form_container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            display: inline;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 35vw;
+            background-color: rgba(0,0,0,0.8);
+            border-radius: 10px;
+        }
+
+        input,select {
+            padding: 5px 0 5px 0;
+            width: 50%;
+            text-align: center;
+        }
+
+        input[type="submit"]{
+            position: relative;
+            top: 8%;
+            margin: -10px auto;
+            width: 100%;
+        }
+
+        select {
+            display: inline;
+        }
+
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            flex-wrap:wrap ;
+            border: none;
+            padding: 10px;
+        }
+
+        label{
+            font-weight: 700;
+            color: white;
+        }
+
+        p{
+            color: white;
+            display: block;
+        }
+
+        #genero{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .break{
+            flex-basis: 100%;
+            height: 0;
+        }
+    </style>
 </head>
+
 <body>
-    lo va a hacer su puta madre
+
+    <div class="form_container">
+        <h1>Registro</h1>
+        <form method="post" action="#">
+            <fieldset>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos">
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+
+            <fieldset>
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usurario">
+
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password">
+
+                <label for="password2">Repetir contraseña</label>
+                <input type="password" name="password2" id="password2">
+            </fieldset>
+
+            <p>Género</p>
+            <fieldset id="genero">
+                <input type="radio" id="masc" name="gender" value="M">
+                <label for="masc">Masculino</label>
+                <div class="break"></div>
+                <input type="radio" id="fem" name="gender" value="F">
+                <label for="fem">CSS</label>
+                <div class="break"></div>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Otro</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+
+            <input type="submit" value="Reservar" id="submit">
+        </form>
+    </div>
 </body>
+
 </html>

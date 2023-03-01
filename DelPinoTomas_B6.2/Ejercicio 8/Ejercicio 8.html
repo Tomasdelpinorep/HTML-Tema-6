@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Ejercicio 8</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body{
+            background-image: url(recursos/hotel.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+        }
+
+        .form_container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            display: inline;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 35vw;
+            background-color: rgba(0,0,0,0.8);
+            border-radius: 10px;
+        }
+
+        input,select {
+            padding: 5px 0 5px 0;
+            width: 50%;
+            text-align: center;
+        }
+
+        input[type="submit"]{
+            position: relative;
+            top: 8%;
+            margin: -10px auto;
+            width: 100%;
+        }
+
+        select {
+            display: inline;
+        }
+
+        fieldset{
+            display: flex;
+            justify-content: space-around;
+            border: none;
+            padding: 10px;
+        }
+
+        label{
+            font-weight: 700;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form_container">
+        <h1>Hotel San Juan Bosco *****</h1>
+        <form method="post" action="#">
+            <fieldset>
+                <label for="num_huespedes">Nº De Huéspedes</label>
+                <input type="number" name="num_huespedes" id="num_huespedes" min="1" max="10">
+            </fieldset>
+
+            <fieldset>
+                <label for="llegada">Fecha de llegada</label>
+                <input type="date" name="llegada" id="llegada">
+            </fieldset>
+
+            <fieldset>
+                <label for="salida">Fecha de salida</label>
+                <input type="date" name="salida" id="salida">
+            </fieldset>
+
+            <FIELDset>
+                <label for="tipo_habitacion">Tipo de habitación</label>
+                <select name="tipo_habitacion" id="tipo_habitacion">
+                    <option value=""></option>
+                    <option value="Tipo1">Tipo 1</option>
+                    <option value="Tipo2">Tipo 2</option>
+                    <option value="Tipo3">Tipo 3</option>
+                </select>
+            </FIELDset>
+
+            <fieldset>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+
+            <input type="submit" value="Reservar" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
